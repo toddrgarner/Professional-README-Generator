@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// License Badge //
 function renderLicenseBadge(data) {
   var licensePicked = data.License;
   let licenseBadge = ''
@@ -21,25 +20,40 @@ function renderLicenseBadge(data) {
   if (licensePicked === "None"){
     return; 
   }
-
-
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(data) {
-if (renderLicenseLink === "MIT"){
-  renderLicenseLink = "mit";
-}
+
+// License Verification Section //
+function renderLicenseLink(license) {
+var renderLicenseLink = data.License;
+  if (data.license === "MIT")
+    data.licenseLink = "MIT";
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection() {}
+function renderLicenseLink(license) {
+  if (data.license === "Apache")
+      data.licenseLink = "Apache";
+  }
 
-// TODO: Create a function to generate markdown for README
+  function renderLicenseLink(license) {
+    if (data.license === "BSD-3 Clause")
+        data.licenseLink = "BSD-3 Clause";
+    }
+
+    if (data.license === "None"){
+      return 
+    }
+    
+// Returns License Section of README
+
+function renderLicenseSection(license) {
+  if (data.license === "None")
+  return
+}
+
+// Create README Section //
 function generateMarkdown(data) {
-  return `# ${data.Title}
+  return `# ${data.License}
 `;
 }
 
@@ -104,4 +118,13 @@ module.exports = generateMarkdown;
 // If you'd like to run tests on the code for this app you can do so using jest.//
 
 
+## Deployed Live URL:
+ https://toddrgarner.github.io/Weather-Dashboard/
 
+## Github Repository URL:
+https://github.com/toddrgarner/Weather-Dashboard
+
+## Weather Dashboard GIF:
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/110719370/189460119-36abf568-af29-40c7-be04-960d54d386f8.gif)
+
+## © 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
