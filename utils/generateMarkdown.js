@@ -18,17 +18,17 @@ function renderLicenseBadge(data) {
   }
 
   if (licensePicked === "None"){
-    return; 
+    return ""; 
   }
 }
 
 // License Verification Section //
 function renderLicenseSection(data) {
-var renderLicenseLink = data.License;
-  if (data.license === "None") {
-    return;
+
+  if (data.License === "None") {
+    return "";
     } else {
-      return `# License
+      return `## License
 ${renderLicenseBadge(data)}`
     }
     
@@ -36,52 +36,44 @@ ${renderLicenseBadge(data)}`
 
 // License Verification Section //
 function renderLicenseTOC(data) {
-  var renderLicenseLink = data.License;
-    if (data.license === "None") {
-      return;
+
+    if (data.License === "None") {
+      return ""; 
       } else {
         return `* [License](#license)` 
       }
   
 }
 
-
 // Create README Section //
 function generateMarkdown(data) {
   return `# ${data.Title}
+  ## https://github.com/${data.Username}/${data.Title}
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Contribute](#contribute)
+  ${renderLicenseTOC(data)}
+  * [Test](#test)
+  
+  ## Description 
+  ${data.Description}
+  ## Installation
+  ${data.Installation}
+  ## Contributors
+  ${data.Contributors}
+  ${renderLicenseSection(data)}
+  ## Test
+  I tested this project with: ${data.Test}
 `;
 }
-
 module.exports = generateMarkdown;
 
-// # <Your-Project-Title>
 
 
 
-// ## Table of Contents (Optional)
 
-// * Description
-// * Installation 
-// * Contribute
-// * License
-// * Test
 
-// ## Description
-// Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-// - [Installation](#installation)
-
-// ## Installation
-
-// ## Contribute
-
-// ## License
-
-// ## Test
-
-// Provide instructions and examples for use. Include screenshots as needed.
-
-// To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 
 
