@@ -30,9 +30,9 @@ const questions = [
     message: "What dependencies were installed?",
   },
   {
-    type: "List",
+    type: "list",
     name: "License",
-    message: "Type your title here",
+    message: "Choose your type of license",
     choices: ["None", "MIT", "Apache", "BSD-3 Clause"],
   },
 
@@ -57,7 +57,7 @@ const questions = [
 
 // Creates generateMarkdown to README file
 const writeFile = (fileName, data) => {
-  fs.writeFile(fileName, data, function (err) {
+  fs.writeFile(fileName, data, function(err) {
     console.log(data),
       err ? console.log(err) : console.log("README.md successfully created!");
   });
@@ -65,11 +65,11 @@ const writeFile = (fileName, data) => {
 
 // Initializes app
 const init = () => {
-  inquirer.prompt(questions).then(function (data) {
+  inquirer.prompt(questions).then(function(data) {
     writeFile("README.md", generateMarkdown(data));
     console.log(data);
   });
 };
 
 init();
-console.log(init)
+
