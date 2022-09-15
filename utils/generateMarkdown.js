@@ -22,7 +22,6 @@ function renderLicenseBadge(data) {
   }
 }
 
-
 // License Verification Section //
 function renderLicenseLink(license) {
 var renderLicenseLink = data.License;
@@ -66,7 +65,11 @@ module.exports = generateMarkdown;
 
 // ## Table of Contents (Optional)
 
-
+* [Description](#description)
+* [Installation Instructions](#installation-instructions)
+* [How to contribute](#how-to-contribute)
+* [To Test](#to-test)
+* [License](#license)
 
 // If your README is long, add a table of contents to make it easy for users to find what they need.
 
@@ -89,7 +92,7 @@ module.exports = generateMarkdown;
 // To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 //     ```md
-//     ![alt text](assets/images/screenshot.png)
+    ![alt text](assets/images/screenshot.png)
 //     ```
 
 // ## Credits
@@ -118,13 +121,3 @@ module.exports = generateMarkdown;
 // If you'd like to run tests on the code for this app you can do so using jest.//
 
 
-## Deployed Live URL:
- https://toddrgarner.github.io/Weather-Dashboard/
-
-## Github Repository URL:
-https://github.com/toddrgarner/Weather-Dashboard
-
-## Weather Dashboard GIF:
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/110719370/189460119-36abf568-af29-40c7-be04-960d54d386f8.gif)
-
-## © 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
