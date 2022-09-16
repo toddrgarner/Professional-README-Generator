@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   ## Professional README Generator
   * [Description](#description)
   * [Installation](#installation)
-  * [Contribute](#contribute)
+  * [Contributors](#contributors)
   ${renderLicenseTOC(data)}
   * [Test](#test)
     ## Description 
@@ -71,9 +71,14 @@ module.exports = generateMarkdown;
 
 
 
+// Test //
+// Node.js provides users with the abilty to run test by using "Jest", a JavaScript testing solution system.
+// 
 
 
-
+// description
+// Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file   
+// through the Node.js system.
 
 
 
