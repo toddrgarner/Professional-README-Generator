@@ -63,8 +63,8 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data)}
   ## Test
   You can use Jest to run test one the code.
-  ## Video Link
-  [link test](https://toddgarner@gmail.com)
+  ## PRG Installation Link
+  [Installation Link](https://toddgarner@gmail.com)
 `;
 }
 module.exports = generateMarkdown;
