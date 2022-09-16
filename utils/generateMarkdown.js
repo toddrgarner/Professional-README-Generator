@@ -51,10 +51,10 @@ function generateMarkdown(data) {
   ## Professional README Generator
   * [Description](#description)
   * [Installation](#installation)
-  * [Contributors](#contributors)
+  * [Contribute](#contribute)
   ${renderLicenseTOC(data)}
   * [Test](#test)
-    ## Description 
+  ## Description 
   ${data.Description}
   ## Installation
   ${data.Installation}
@@ -77,8 +77,8 @@ module.exports = generateMarkdown;
 
 
 // description
-// Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file   
-// through the Node.js system.
+// Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file//   
+// through the Node.js system.// 
 
 
 
