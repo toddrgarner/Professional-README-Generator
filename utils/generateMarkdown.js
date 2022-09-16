@@ -47,8 +47,8 @@ function renderLicenseTOC(data) {
 
 // Create README Section //
 function generateMarkdown(data) {
-  return `# ${data.Title}
-  ## https://github.com/${data.Username}/${data.Title}
+  return `#${data.Title}
+  ## Professional README Generator
   * [Description](#description)
   * [Installation](#installation)
   * [Contribute](#contribute)
