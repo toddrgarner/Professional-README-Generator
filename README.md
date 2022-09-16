@@ -1,18 +1,18 @@
-#Professional README Generator
+## Professional README Generator
   * [Description](#description)
   * [Installation](#installation)
-  * [Contribute](#contribute)
+  * [Contributors](#contributors)
   * [License](#license)
   * [Test](#test)
   ## Description 
-  Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file through the Node.js system.
+ Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file
   ## Installation
-  Inquirer 8.2.4 and Node.js
+  Node.js - Inquirer 8.2.4
   ## Contributors
   Todd Garner
   ## License
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Test
-  You can use Jest to run test one the code.
+Node.js provides users with the abilty to run test by using "Jest", a JavaScript testing solution system.
   ## Video Link
-  [link test](https://toddgarner@gmail.com)
+  [link test](https://drive.google.com/file/d/1IF-xfau5l3_dnS6hw1FyGQvD6poAeFmZ/view)

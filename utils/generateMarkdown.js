@@ -48,9 +48,10 @@ function renderLicenseTOC(data) {
 // Create README Section //
 function generateMarkdown(data) {
   return `#${data.Title}
+  ![license badge](${renderLicenseBadge(data.license)})
   * [Description](#description)
   * [Installation](#installation)
-  * [Contribute](#contribute)
+  * [Contributors](#contributors)
   ${renderLicenseTOC(data)}
   * [Test](#test)
   ## Description 
@@ -78,7 +79,6 @@ module.exports = generateMarkdown;
 // description
 // Professional README Generator is a user friendly application that is created to give users the ability to generate a automated README.md file//   
 // through the Node.js system.// 
-
 
 
 
