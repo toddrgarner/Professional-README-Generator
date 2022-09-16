@@ -54,8 +54,7 @@ function generateMarkdown(data) {
   * [Contribute](#contribute)
   ${renderLicenseTOC(data)}
   * [Test](#test)
-  
-  ## Description 
+    ## Description 
   ${data.Description}
   ## Installation
   ${data.Installation}
@@ -63,7 +62,9 @@ function generateMarkdown(data) {
   ${data.Contributors}
   ${renderLicenseSection(data)}
   ## Test
-  I tested this project with: ${data.Test}
+  You can use Jest to run test one the code.
+  ## Video Link
+  [link test](https://toddgarner@gmail.com)
 `;
 }
 module.exports = generateMarkdown;
