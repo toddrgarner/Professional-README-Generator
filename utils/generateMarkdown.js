@@ -48,7 +48,7 @@ function renderLicenseTOC(data) {
 // Create README Section //
 function generateMarkdown(data) {
   return `#${data.Title}
-  ![license badge](${renderLicenseBadge(data.license)})
+  ![license badge](${renderLicenseBadge(data)})
   * [Description](#description)
   * [Installation](#installation)
   * [Contributors](#contributors)
